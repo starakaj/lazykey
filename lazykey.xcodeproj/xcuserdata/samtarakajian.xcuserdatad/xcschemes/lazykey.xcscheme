@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08B13BF61C78FEEF00765AF5"
+               BlueprintIdentifier = "08F25DB81C791B8B00C4DD8F"
                BuildableName = "lazykey.app"
                BlueprintName = "lazykey"
                ReferencedContainer = "container:lazykey.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08B13BF61C78FEEF00765AF5"
+            BlueprintIdentifier = "08F25DB81C791B8B00C4DD8F"
             BuildableName = "lazykey.app"
             BlueprintName = "lazykey"
             ReferencedContainer = "container:lazykey.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08B13BF61C78FEEF00765AF5"
+            BlueprintIdentifier = "08F25DB81C791B8B00C4DD8F"
             BuildableName = "lazykey.app"
             BlueprintName = "lazykey"
             ReferencedContainer = "container:lazykey.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08B13BF61C78FEEF00765AF5"
+            BlueprintIdentifier = "08F25DB81C791B8B00C4DD8F"
             BuildableName = "lazykey.app"
             BlueprintName = "lazykey"
             ReferencedContainer = "container:lazykey.xcodeproj">
