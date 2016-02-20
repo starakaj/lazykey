@@ -1,10 +1,10 @@
 PODS:
-  - AudioKit (3.0.1)
+  - ColorUtils (1.1.3)
 
 DEPENDENCIES:
-  - AudioKit (~> 3.0)
+  - ColorUtils (~> 1.1)
 
 SPEC CHECKSUMS:
-  AudioKit: 3dac9b64bc334ab84648f9755888c771e567b366
+  ColorUtils: f99c501f9caf5374b35480a281168565a24bdb6d
 
 COCOAPODS: 0.38.2

@@ -1,1 +1,1 @@
-pod 'AudioKit', '~> 3.0'
+pod 'ColorUtils', '~> 1.1'
