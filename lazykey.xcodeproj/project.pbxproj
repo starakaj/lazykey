@@ -13,7 +13,22 @@
 		08B13C051C78FEEF00765AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B13C031C78FEEF00765AF5 /* Main.storyboard */; };
 		08B13C071C78FEEF00765AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B13C061C78FEEF00765AF5 /* Assets.xcassets */; };
 		08B13C0A1C78FEEF00765AF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B13C081C78FEEF00765AF5 /* LaunchScreen.storyboard */; };
+		08B13C121C78FF8F00765AF5 /* libABLLink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B13C111C78FF8F00765AF5 /* libABLLink.a */; };
+		9A851CEE333D91B472302C77 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB6BD6A09CAE2FD6C880052 /* libPods.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08B13C1C1C7900E200765AF5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08B13BF71C78FEEF00765AF5 /* lazykey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lazykey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +41,13 @@
 		08B13C061C78FEEF00765AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B13C091C78FEEF00765AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08B13C0B1C78FEEF00765AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B13C111C78FF8F00765AF5 /* libABLLink.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libABLLink.a; path = ../../LinkKitLib/lib/libABLLink.a; sourceTree = "<group>"; };
+		08B13C141C78FF9700765AF5 /* ABLLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLLink.h; sourceTree = "<group>"; };
+		08B13C151C78FF9700765AF5 /* ABLLinkSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLLinkSettingsViewController.h; sourceTree = "<group>"; };
+		08B13C161C78FF9700765AF5 /* ABLLinkUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLLinkUtils.h; sourceTree = "<group>"; };
+		2DE75DB41FBA2A0B39A1F71F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		782D971EDB3E08AE43826F3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8AB6BD6A09CAE2FD6C880052 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B13C121C78FF8F00765AF5 /* libABLLink.a in Frameworks */,
+				9A851CEE333D91B472302C77 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +68,8 @@
 			children = (
 				08B13BF91C78FEEF00765AF5 /* lazykey */,
 				08B13BF81C78FEEF00765AF5 /* Products */,
+				B32958005196AA04E7115E32 /* Pods */,
+				C7ECB4E99F893ACCF547300E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +84,7 @@
 		08B13BF91C78FEEF00765AF5 /* lazykey */ = {
 			isa = PBXGroup;
 			children = (
+				08B13C131C78FF9700765AF5 /* include */,
 				08B13BFD1C78FEEF00765AF5 /* AppDelegate.h */,
 				08B13BFE1C78FEEF00765AF5 /* AppDelegate.m */,
 				08B13C001C78FEEF00765AF5 /* ViewController.h */,
@@ -74,9 +101,38 @@
 		08B13BFA1C78FEEF00765AF5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				08B13C111C78FF8F00765AF5 /* libABLLink.a */,
 				08B13BFB1C78FEEF00765AF5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08B13C131C78FF9700765AF5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				08B13C141C78FF9700765AF5 /* ABLLink.h */,
+				08B13C151C78FF9700765AF5 /* ABLLinkSettingsViewController.h */,
+				08B13C161C78FF9700765AF5 /* ABLLinkUtils.h */,
+			);
+			name = include;
+			path = ../../LinkKitLib/include;
+			sourceTree = "<group>";
+		};
+		B32958005196AA04E7115E32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				782D971EDB3E08AE43826F3F /* Pods.debug.xcconfig */,
+				2DE75DB41FBA2A0B39A1F71F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7ECB4E99F893ACCF547300E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AB6BD6A09CAE2FD6C880052 /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08B13C0E1C78FEEF00765AF5 /* Build configuration list for PBXNativeTarget "lazykey" */;
 			buildPhases = (
+				7E415FEC86C71F2E2E2E7E7C /* Check Pods Manifest.lock */,
 				08B13BF31C78FEEF00765AF5 /* Sources */,
 				08B13BF41C78FEEF00765AF5 /* Frameworks */,
 				08B13BF51C78FEEF00765AF5 /* Resources */,
+				08B13C1C1C7900E200765AF5 /* Embed Frameworks */,
+				C59A7D39A69B2F6BAFC86112 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +202,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E415FEC86C71F2E2E2E7E7C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C59A7D39A69B2F6BAFC86112 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08B13BF31C78FEEF00765AF5 /* Sources */ = {
@@ -261,6 +353,7 @@
 		};
 		08B13C0F1C78FEEF00765AF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782D971EDB3E08AE43826F3F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = lazykey/Info.plist;
@@ -272,6 +365,7 @@
 		};
 		08B13C101C78FEEF00765AF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE75DB41FBA2A0B39A1F71F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = lazykey/Info.plist;
@@ -300,6 +394,7 @@
 				08B13C101C78FEEF00765AF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

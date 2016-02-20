@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
+@import AudioKit;
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
